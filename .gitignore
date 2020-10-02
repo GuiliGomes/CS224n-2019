@@ -1,0 +1,88 @@
+
+venv/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+__pycache__
+
+logs/*
+*.pkl
+datasets/*.pkl
+models/*.pkl
+
+# Distribution / packaging
+.Python
+/env/
+/build/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+## Recommended To Ignore by github ##
+#ignore cloud9 files
+*.c9revisions
+*.settings
+
+# ignore Visual Studio Code IDE files.
+.vscode/
+typings/
+typings.json
+jsconfig.json
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+
+# Logs and databases #
+######################
+*.log
+*.sqlite
+
+# Other VCS #
+#############
+.hg/*
+
+# Build environments #
+######################
+.gradle/
+build/
+*.diff
+
+# Editor backup files #
+#######################
+*~
+*\#*
+*.swp
+
+# NLP Stuff
+vocab.json

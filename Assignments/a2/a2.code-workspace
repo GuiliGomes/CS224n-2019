@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "/Users/ggomes1/Documents/ml/nlp/CS224n-2019-solutions-master"
+		},
+		{
+			"path": "/Users/ggomes1/Documents/ml/nlp/a3"
+		},
+		{
+			"path": "/Users/ggomes1/Documents/ml/nlp/CS224N-2019"
+		},
+		{
+			"path": "../a4"
+		}
+	],
+	"settings": {
+		"python.envFile": "",
+		"python.pythonPath": "/Users/ggomes1/.local/share/virtualenvs/vscode-RpcJckup/bin/python",
+		"python.venvPath": "/Users/ggomes1/.local/share/virtualenvs",
+		"python.pipenvPath": ""
+	}
+}
