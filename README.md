@@ -11,10 +11,28 @@ My notes and solutions for CS224N 2019
 
 ## Detailed Course Lectures:
 
+### 04 - Backpropagation:
+- [Updating Word Vectors - Pitfalls](https://youtu.be/yLYHDSv-288?t=1058)
+- [Computation Graphs and Backpropagation](https://youtu.be/yLYHDSv-288?t=1520)
+	- `[downstream gradient] = [upstream gradient] * [local gradient]`
+- [Implementation](https://youtu.be/yLYHDSv-288?t=3071)
+- [You should understand backprop](https://medium.com/@karpahy/uyes-you-should-understand-backprop-e2f06eab496b)
+- [Regularization](https://youtu.be/yLYHDSv-288?t=3666)
+- [Non-linearities](https://youtu.be/yLYHDSv-288?t=4065)
+- [Parameter Initialization](https://youtu.be/yLYHDSv-288?t=4568)
+- [Optimizers](https://youtu.be/yLYHDSv-288?t=4715)
+
+
 ### 13 - Contextual Word Embeddings:
+
+#### [TagLM](https://youtu.be/S-CspeZ8FHc?t=1275)
+- Meanining of word in context
+- Semi-supervised. Unsupervised step learns embedings (eg. word2vec) + RNN LM
+- learned embedding representations (without context) are joined with LM embeddings (hidden states) to generate the final representation that gets trained in supervised fashion for final talk, like NER
 
 #### [ELMo](https://youtu.be/S-CspeZ8FHc?t=1906)
 - 2 biLSTM LM
+- Task-specific weighted average of hidden states of *all layers* 
 - Character representation of words to build initial representation. 2048 char n-gram filters and 2 highway layers, 512 dim projection
 - 4096 dim hidden/cell LSTM states with 512 dim projection to next input
 - Residual connections
@@ -39,6 +57,8 @@ My notes and solutions for CS224N 2019
 - Transformer Block
 	- Multihead
 	- 2-layer FF NNet
+	- Residual connection
+	- Layer Normalization
 - [LayerNorm](https://youtu.be/S-CspeZ8FHc?t=3533)
 - Bidirectional
 	- GPT is left-to-right
@@ -47,3 +67,24 @@ My notes and solutions for CS224N 2019
 - Objective:
 	- Predict masked words
 	- Second loss function. Next sentence prediction (classification: Given SentA and SentB IsSentBNexSentence: Yes/No)
+
+
+### 14 - Transformers and Self-Attrntion
+
+#### [Attention](https://youtu.be/5vcj8kSwBCY?t=359)
+- Crucial for NMT (memory)
+- Representation
+
+#### [Self-Attention](https://youtu.be/5vcj8kSwBCY?t=403)
+- Same path length between all pices
+- Added casuality by masking words in the decoder
+
+#### [Multi-head](https://youtu.be/5vcj8kSwBCY?t=927)
+- Residuals carry postion information
+
+#### [Self-Similarity](https://youtu.be/5vcj8kSwBCY?t=1250)
+- Motifs
+
+#### [Relative Attention](https://youtu.be/5vcj8kSwBCY?t=2341)
+- Tranlation invariance
+- How far you are aprt when comparing things
